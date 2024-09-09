@@ -51,7 +51,7 @@ dynamic_entries = []
 for i in range(st.session_state.num_entries):
     with st.expander(f"Entry {i + 1}", expanded=(i == 0)):  # Expand only the first entry by default
         # Create columns for Hour, Minute, Second, Comment, OSATS Metric, and Remarks
-        cols = st.columns([1.5, 4, 4, 4, 4])  # Adjust column widths to fit everything on one line
+        cols = st.columns([2, 4, 6, 4,1])  # Adjust column widths to fit everything on one line
 
         # Time input for hours, minutes, and seconds
         with cols[0]:
@@ -62,7 +62,7 @@ for i in range(st.session_state.num_entries):
 
         # Comment input
         with cols[1]:
-            comment = st.text_input(f"Comment {i + 1}", "", key=f'comment_{i}')
+            comment = st.text_area(f"Comment {i + 1}", "", key=f'comment_{i}')
 
         # OSATS Metric input (keeping the empty option)
         with cols[2]:
@@ -135,7 +135,7 @@ def convert_df_to_csv(df):
     return df.to_csv(index=False).encode('utf-8')
 
 # Export to CSV Button
-if st.button("Export to CSV"):
+if st.button("First Export to download CSV file"):
     if not st.session_state.data:
         st.error("No data to export. Please save entries first.")
     else:
