@@ -135,7 +135,7 @@ def convert_df_to_csv(df):
     return df.to_csv(index=False).encode('utf-8')
 
 # Export to CSV Button
-if st.button("First Export to download CSV file"):
+if st.button("Export to download CSV file"):
     if not st.session_state.data:
         st.error("No data to export. Please save entries first.")
     else:
