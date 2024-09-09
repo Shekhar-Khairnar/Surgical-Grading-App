@@ -51,7 +51,7 @@ dynamic_entries = []
 for i in range(st.session_state.num_entries):
     with st.expander(f"Entry {i + 1}", expanded=(i == 0)):  # Expand only the first entry by default
         # Create columns for Hour, Minute, Second, Comment, OSATS Metric, and Remarks
-        cols = st.columns([1.5, 2, 2, 2.5, 3])  # Adjust column widths to fit everything on one line
+        cols = st.columns([1.5, 4, 4, 4, 4])  # Adjust column widths to fit everything on one line
 
         # Time input for hours, minutes, and seconds
         with cols[0]:
