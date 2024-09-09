@@ -31,13 +31,13 @@ st.subheader("Procedure Information")
 cols = st.columns(4)  # Display Name, Date, Procedure, and Grader in a single row
 
 with cols[0]:
-    name = st.text_input("Name", "")
+    name = st.text_input("Medical student name", "")
 with cols[1]:
     date = st.date_input("Date", datetime.now())
 with cols[2]:
     procedure = st.selectbox("Procedure", procedures)
 with cols[3]:
-    grader = st.text_input("Grader", "")
+    grader = st.text_input("Grader Name", "")
 
 # Time dropdown options (with an initial empty string)
 hours = [""] + [f"{i:02}" for i in range(24)]
