@@ -1,5 +1,8 @@
 # Surgical Grading App
 
+### Streamlit Cloud Link
+[Access the Surgical Grading App here](https://surgical-grading-app-bndhqmpjj7rvsvitdhguet.streamlit.app/)
+
 ### Overview
 The **Surgical Grading App** is a web-based tool developed using **Streamlit** to enhance the process of grading surgical procedures. The primary objective of this app is to establish a systematic and standardized file management process, addressing the challenges that arose from inconsistent file naming and manual handling of grading data by multiple graders. This app ensures a streamlined approach to file generation, enabling efficient extraction of data for AI modeling.
 
@@ -22,9 +25,6 @@ The **Surgical Grading App** provides a structured solution to these issues:
 - **File Export**: Grading data can be easily exported in CSV format, following a strict naming convention that facilitates future use.
 - **Local File Storage**: All generated files are stored locally, ensuring that data remains under the user's control without relying on cloud storage.
 - **Seamless Data Preparation**: The app’s structured output is optimized for integration with AI modeling, reducing the need for manual data preprocessing.
-
-### Streamlit Cloud Link
-[Access the Surgical Grading App here](https://surgical-grading-app-bndhqmpjj7rvsvitdhguet.streamlit.app/)
 
 ### Why This App Matters
 By automating the grading process and enforcing a structured file management system, the **Surgical Grading App** resolves the issues caused by inconsistent file handling from multiple graders. This approach saves time, reduces manual effort, and improves the accuracy and efficiency of data preparation, making it ideal for future AI-driven modeling and analysis.
